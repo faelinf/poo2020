@@ -1,0 +1,15 @@
+package aula02.universidade;
+
+public class TestaCurso {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Curso c1 = new Curso();
+		c1.nome = "Engenharia de Software";
+		c2.area = "Area";
+		c3.duracao = "";
+		
+	}
+
+}
