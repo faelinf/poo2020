@@ -39,7 +39,6 @@ public class ExercicioTres {
          i = Integer.parseInt(teclado.nextLine());
 
      }
-
     }
 }
 
