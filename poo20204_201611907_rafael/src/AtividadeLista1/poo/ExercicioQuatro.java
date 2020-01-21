@@ -17,6 +17,7 @@ public class ExercicioQuatro {
     System.out.println();
  
     n = s.length(); 
+    
     for (i=0; i<n; i++) {
       c = s.charAt(i);
       if (Character.isDigit(c))
@@ -28,7 +29,7 @@ public class ExercicioQuatro {
                 else if (Character.isSpaceChar(c))
                         System.out.printf("%c <--- space blank\n", c);
                      else System.out.printf("%c\n", c);
-    }
-  }
+    	}
+  	}
  
 }

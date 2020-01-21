@@ -1,4 +1,4 @@
-package aula02.universidade;
+package aula02.Lista2.poo.aulaDois;
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;

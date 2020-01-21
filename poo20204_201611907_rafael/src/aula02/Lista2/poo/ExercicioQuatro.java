@@ -4,7 +4,7 @@ public class ExercicioQuatro {
 
 }
 */
-package atividade1.poo;
+package aula02.Lista2.poo;
 
 import java.util.Scanner;
 
