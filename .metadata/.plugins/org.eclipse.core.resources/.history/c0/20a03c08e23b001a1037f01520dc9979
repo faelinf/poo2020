@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+
+public class exercicio1 {
+
+    public static  void main(String[] args) {
+        
+    	Scanner sc = new Scanner(System.in); 
+        String nome = "teste";
+        String matricula = "teste2";
+        int quantidade = 0;
+        System.out.println("Coloque aqui a quantidade de alunos listado: ");
+        quantidade = sc.nextInt();
+        var myList = new ArrayList<String>();
+
+
+        for (int i = 0; i < quantidade; i++) {
+            if (i != 0) {
+                System.out.println("Nome do aluno:");
+                System.out.println("Matricula aluno:");
+                nome = sc.nextLine();
+                matricula = sc.nextLine();
+                myList.add("Aluno : " + nome + " - matricula : " + matricula);
+            }
+        }
+
+        System.out.println(myList);
+
+    }
+
+}

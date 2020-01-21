@@ -1,0 +1,41 @@
+package aula03.salaaula;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Pessoa {
+		
+	public static void main(String[] args){
+		
+		Pessoa p1 = new Pessoa();
+		
+		p1.setNome("Rafael");
+		p1.setDataNascimento(new Date());
+		
+		System.out.println("Nome: " + p1.getNome());
+		System.out.println("Data de nascimento: " + p1.getDataNascimento());
+	}
+
+	private String getDataNascimento() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private String getNome() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private void setDataNascimento(Date date) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void setNome(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	
+	
+}
