@@ -1,61 +1,70 @@
 package aula06.salaaula.endereco;
 
-/**
- * Created by Alunoinf_2 on 23/01/2020.
- */
+import java.util.ArrayList;
+import java.util.List;
+
 public class Municipio {
-    private Long codIBGE;
-    private String nome;
-    private Estado estado;
-    private Bairro bairros;
+	private Long codigoIBGE;
+	private String nome;
+	private Estado estado;
+	private List<Bairro> bairros;
+	
+	public Municipio(Long codigoIBGE, String nome, Estado estado) {
+		this.codigoIBGE = codigoIBGE;
+		this.nome = nome;
+		this.estado = estado;
+		this.bairros = new ArrayList<Bairro>();
+	}
 
-    public Long getCodIBGE() {
-        return codIBGE;
-    }
+	public Long getCodigoIBGE() {
+		return codigoIBGE;
+	}
 
-    public void setCodIBGE(Long codIBGE) {
-        this.codIBGE = codIBGE;
-    }
+	public void setCodigoIBGE(Long codigoIBGE) {
+		this.codigoIBGE = codigoIBGE;
+	}
 
-    public String getNome() {
-        return nome;
-    }
+	public String getNome() {
+		return nome;
+	}
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
 
-    public Estado getEstado() {
-        return estado;
-    }
+	public Estado getEstado() {
+		return estado;
+	}
 
-    public void setEstado(Estado estado) {
-        this.estado = estado;
-    }
+	public void setEstado(Estado estado) {
+		this.estado = estado;
+	}
 
-    public Municipio(Long codIBGE, String nome, Estado estado) {
-        this.codIBGE = codIBGE;
-        this.nome = nome;
-        this.estado = estado;
+	public List<Bairro> getBairros() {
+		return bairros;
+	}
 
-    }
-    /*public void adicionaBairro(Bairro b){
-        this.bairros.add(b);
-    }*/
-
-    public Bairro consultapeloNome(String nome) {
-        Bairro novoBairro = null;
-        for (Municipio m : this.bairros) {
-            if (m.getNome().equals(nome)) {
-                novoBairro = bairros;
-            }
-        }
-        return novoBairro;
-    }
-
-    public void removeBairo(Municipio b){
-        this.bairros.remove(b);
-    }
+	public void setBairros(List<Bairro> bairros) {
+		this.bairros = bairros;
+	}
+	
+	public void adicionarBairro(Bairro b) {
+		this.bairros.add(b);
+	}
+	
+	public Bairro consultarPeloNome(String nome) {
+		Bairro novoBairro = null;
+		for(Bairro b : this.bairros) {
+			if(b.getNome().equals(nome)) {
+				novoBairro = b;
+			}
+		}
+		return novoBairro;
+	}
+	
+	public void removeBairro(Bairro b) {
+		this.bairros.remove(b);
+	}
+	
+	
 }
-
-

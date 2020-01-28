@@ -1,19 +1,20 @@
 package aula06.salaaula.endereco;
 
-/**
- * Created by Alunoinf_2 on 23/01/2020.
- */
 public class EnderecoTeste {
 
-    public static void main (String[] args){
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Pais pais = new Pais("Brasil");
+		Estado goias = new Estado("GO", "Goiás", pais);
+		Municipio municipio = new Municipio(new Long(25300), 
+				"Goiânia", goias);
+		Bairro bairro = new Bairro("Central", "Setor Central", municipio);
+		Logradouro log = new Logradouro("Paranaíba", TipoLogradouro.AVENIDA);
+		
+		Endereco end = new Endereco("125", "qd.45 lt. 26A", 74135967, 
+				"Residencial", bairro, log);
+	
+		System.out.println(end.toString());
+	}
 
-        Pais pais = new Pais ("Brasil");
-        Estado estado = new Estado("GO", "Goias");
-        Municipio municipio=new Municipio(new Long(32323),"Goiania");
-        Logradouro log = new Logradouro("RaCunamatata", TipoLogradouro.AVENIDA);
-        Bairro bairro = new Bairro("Central", "Setor culuna");
-        Endereco end = new Endereco("123", 23132, "4023894", "Residencial");
-
-        System.out.println(end.toString());
-    }
 }
