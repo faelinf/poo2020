@@ -1,6 +1,7 @@
 package aula04.as4b.exercicio01.alunos;
 
-public class Alunos {
+public class ClasseAluno {
+
 	@Override
 	public String toString() {
 		StringBuffer sb = new StringBuffer();
@@ -49,7 +50,7 @@ public class Alunos {
 		this.curso = curso;
 	}
 
-	public Alunos(String nome, int matricula, int ano, Curso curso) {
+	public ClasseAluno(String nome, int matricula, int ano, Curso curso) {
 		this.nome = nome;
 		this.matricula = matricula;
 		this.ano = ano;

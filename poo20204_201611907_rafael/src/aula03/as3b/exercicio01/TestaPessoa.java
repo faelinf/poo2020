@@ -6,7 +6,7 @@ import java.util.Calendar;
 
 import java.util.GregorianCalendar;
 
-public class DadosPessoa {
+public class TestaPessoa {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -16,20 +16,20 @@ public class DadosPessoa {
 		int[] date = new int[3];
 		int idade = 0;
 		
-		System.out.println("Qual o seu nome?");
+		System.out.println("Digite o seu nome");
 		p.setNome(sc.nextLine());
 		
 		
-		System.out.println("Qual a data de nascimento?\nDia:");
+		System.out.println("Quando vc nasceu ?\nDia:");
 		date[0] = sc.nextInt();
-		System.out.println("Mês: ");
+		System.out.println("O Mes: ");
 		date[1] = sc.nextInt();
-		System.out.println("Ano: ");
+		System.out.println("O Ano: ");
 		date[2] = sc.nextInt();
 		
 		p.setData(date);
 		
-		System.out.println("Qual a sua altura?");
+		System.out.println("Digite a sua altura");
 		p.setAltura(sc.nextDouble());
 		
 		idade = p.idade(date);

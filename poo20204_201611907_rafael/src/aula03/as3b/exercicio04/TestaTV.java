@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import aula03.as3b.exercicio03.Elevador;
 
-public class Televisao {
+public class TestaTV {
 	public static void main(String[] args) {
 			Scanner sc = new Scanner(System.in);
 			
@@ -39,7 +39,7 @@ public class Televisao {
 					System.out.println("\n(0)- Mostrar Controle");
 					break;	
 				case 5: 
-					System.out.println("\nDigite o número do canal");
+					System.out.println("\nDigite o numero do canal");
 					int canal = sc.nextInt();
 					control.irCanal(canal);					
 					control.consultar();

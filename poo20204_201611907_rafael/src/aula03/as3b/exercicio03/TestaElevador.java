@@ -12,38 +12,38 @@ public class TestaElevador {
 		elevador.inicia(20, 15);
 		
 
-		System.out.println("\nSelecione uma opção:");
-		System.out.println("(1) Entrou pessoas\n(2) Saiu pessoas\n(3) Subiu\n(4) Desceu");
+		System.out.println("\nDigite uma opcao:");
+		System.out.println("(1) Entrou alguem\n(2) Saiu alguem\n(3) Subiu\n(4) Desceu");
 		int option = sc.nextInt();
 		
 		do {
 			switch(option) {
 			case 1:
-				System.out.println("Quantas pessoas?");
+				System.out.println("Digite a quantidade de pessoas");
 				pessoas = sc.nextInt();
 				elevador.entra(pessoas);
 				elevador.status();
-				System.out.println("\n(1)(2)(3)(4)(5)\n(0)-Para descrição");
+				System.out.println("\n(1)(2)(3)(4)(5)\n(0)-Para descricao");
 				break;
 			case 2:
-				System.out.println("Quantas pessoas?");
+				System.out.println("Digite a quantidade de pessoas");
 				pessoas = sc.nextInt();
 				elevador.sai(pessoas);
 				elevador.status();
-				System.out.println("\n(1)(2)(3)(4)(5)\n(0)-Para descrição");
+				System.out.println("\n(1)(2)(3)(4)(5)\n(0)-Para descricao");
 				break;
 			case 3 :
 				elevador.sobe();
 				elevador.status();
-				System.out.println("\n(1)(2)(3)(4)(5)\n(0)-Para descrição");
+				System.out.println("\n(1)(2)(3)(4)(5)\n(0)-Para descricao");
 				break;
 			case 4:
 				elevador.desce();
 				elevador.status();
-				System.out.println("\n(1)(2)(3)(4)(5)\n(0)-Para descrição");
+				System.out.println("\n(1)(2)(3)(4)(5)\n(0)-Para descricao");
 				break;	
 			case 0: 
-				System.out.println("\nSelecione uma opção:");
+				System.out.println("\nSelecione uma opcao:");
 				System.out.println("(1) Entrou pessoas\n(2) Saiu pessoas\n(3) Subiu\n(4) Desceu\n(5) Encerrar");
 				break;
 
@@ -51,6 +51,6 @@ public class TestaElevador {
 
 			option = sc.nextInt();
 		}while(option !=5);
-		System.out.println("\n------Elevador Desligado------\n");
+		System.out.println("\nElevador Inativo\n");
 	}
 }
