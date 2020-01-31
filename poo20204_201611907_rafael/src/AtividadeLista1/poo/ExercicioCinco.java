@@ -2,27 +2,27 @@ package AtividadeLista1.poo;
 import java.util.Scanner;
 	
 public class ExercicioCinco {
-	
+
 	public static void main(String[]args){
 	Scanner entrada = new Scanner(System.in);
 	
 	String nome, nomeM;
 	double salario, maiorSalario, soma, media, i = 0;
-	System.out.println("Nome do funcionário: ");
+	System.out.println("Nome do funcionï¿½rio: ");
 	nome = entrada.next();
 	nomeM = nome;
-	System.out.println("Informe o salário: ");
+	System.out.println("Informe o salï¿½rio: ");
 	salario = entrada.nextDouble();
 	maiorSalario = salario;
 	soma = salario;
 	
 		for (; i < 3; i++){
 	
-			System.out.println("Nome do funcionário: ");
+			System.out.println("Nome do funcionï¿½rio: ");
 	
 			nome = entrada.next();
 	
-			System.out.println("Informe o salário: ");
+			System.out.println("Informe o salï¿½rio: ");
 	
 			salario = entrada.nextDouble();
 	
@@ -36,9 +36,9 @@ public class ExercicioCinco {
 	
 			media = soma / i;
 	
-			System.out.println("O maior salário é: "+maiorSalario+" e é de: "+nomeM);
+			System.out.println("O maior salï¿½rio ï¿½: "+maiorSalario+" e ï¿½ de: "+nomeM);
 	
-			System.out.println("Média de salários: "+media);
+			System.out.println("Mï¿½dia de salï¿½rios: "+media);
 	
 	 	}
 	

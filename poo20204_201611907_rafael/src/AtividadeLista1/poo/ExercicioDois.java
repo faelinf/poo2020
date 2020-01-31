@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 import javax.swing.JOptionPane ;
 
-public class Exercicio2 {
+public class ExercicioDois {
+
     public static void main(String a[]) {
         int i;
         int array[] = { 12, 9, 4, 99, 120, 1, 3, 10 };
@@ -13,7 +14,7 @@ public class Exercicio2 {
             System.out.print(array[i] + "  ");
         System.out.println();
         bubble_srt(array, array.length);
-        System.out.print("Valores após sort:\n");
+        System.out.print("Valores apï¿½s sort:\n");
         
         for (i = 0; i < array.length; i++)
             System.out.print(array[i] + "  ");

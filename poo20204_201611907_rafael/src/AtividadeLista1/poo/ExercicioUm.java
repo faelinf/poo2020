@@ -18,8 +18,8 @@ public class ExercicioUm {
 
         for (int i = 0; i < quantidade; i++) {
             if (i != 0) {
-                System.out.println("Qual nome do aluno:");
-                System.out.println("Qual a matrícula do aluno:");
+                System.out.println("Digite o nome do aluno:");
+                System.out.println("Digite a matricula do aluno:");
                 nome = sc.nextLine();
                 matricula = sc.nextLine();
                 myList.add("Aluno : " + nome + " matricula : " + matricula + "\n");

@@ -1,5 +1,7 @@
 package aula10.salaaula;
 
+import aula06.salaaula.endereco.Pais;
+
 /**
  * Created by Alunoinf_2 on 30/01/2020.
  */
@@ -13,7 +15,11 @@ public class MundoAnimal {
         int tamanhoVetor = reino.length;
 
         for (int i=0; i < tamanhoVetor; i++){
-            reino[i].mover(10,10);
+            if (reino[i] instanceof Peixe){
+                ((Peixe) reino[i]).nadar();
+            }else {
+                reino[i].mover(10,10);
+            }
         }
 
         /*

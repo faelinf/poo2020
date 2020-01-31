@@ -7,7 +7,7 @@ public class ExercicioTres {
     public static void main(String[] args) {
         
     	Scanner scan1 = new Scanner(System.in);
-        System.out.print("Qual a quantidade de números a ser buscado:");
+        System.out.print("Digite a quantidade de numeros a ser buscado:");
         
         int a = scan1.nextInt();
 
