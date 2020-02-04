@@ -18,7 +18,7 @@ public class ExercicioTres {
         int numeroDado[] = new int[a];
         int numeroBuscado = 0;
         Scanner scan2 = new Scanner(System.in);
-        System.out.println("Digite algum numero: ");
+        System.out.println("Digite um numero: ");
 
         for (i = 0; i < a; i++)
             num[i] = scan2.nextInt();
@@ -32,7 +32,7 @@ public class ExercicioTres {
             k = 0;
         }
 
-        System.out.print("Crescente: ");
+        System.out.print("Ordem Crescente: ");
         for (i = 0; i < a; i++)
             listBusca.add(num[i]);
             for (j = 0; j < a; j++)
@@ -40,14 +40,14 @@ public class ExercicioTres {
                     System.out.print(num[j] + ",");
         System.out.print("\n");
 
-        System.out.print("Decrescente: ");
+        System.out.print("Ordem Decrescente: ");
         for (i = 0; i <= a; i++)
             for (j = 0; j < a; j++)
                 if (numeroDado[j] == a - i)
                     System.out.print(num[j] + ",");
         System.out.print("\n");
 
-        System.out.println("Qual o numero a ser buscado: ");
+        System.out.println("Digite o numero a ser buscado: ");
         numeroBuscado = scan1.nextInt();
 
         for (i = 0; i <= a; i++) {

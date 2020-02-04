@@ -18,7 +18,7 @@ public class ClasseMatricula {
 		ClasseAluno a2 = new ClasseAluno("Márcia",201873135,2020,c2);
 		
 		Curso d3 = new Departamento("Instituto de Matematica e Estatistica","IME");
-		Curso c3 = new Curso("Matem�tica","MA",(Departamento) d3);
+		Curso c3 = new Curso("Matematica","MA",(Departamento) d3);
 		ClasseAluno a3 = new ClasseAluno("Juao",201509332,2020,c3);
 		
 		alunos.add(a1);

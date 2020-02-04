@@ -11,7 +11,7 @@ public class ExercicioUm {
         String nome = "";
         String matricula = "";
         int quantidade = 0;
-        System.out.println("Quantidade de alunos listados:");
+        System.out.println("Quantidade de Alunos :");
         quantidade = sc.nextInt();
         ArrayList<String> myList = new ArrayList<String>();
 

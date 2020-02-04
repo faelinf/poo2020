@@ -21,13 +21,13 @@ public class ExercicioQuatro {
     for (i=0; i<n; i++) {
       c = s.charAt(i);
       if (Character.isDigit(c))
-         System.out.printf("%c <--- numero\n", c);
+         System.out.printf("%c < numero\n", c);
       else if (Character.isLowerCase(c))
-              System.out.printf("%c <--- letra minuscula\n", c);
+              System.out.printf("%c < letra minuscula\n", c);
            else if (Character.isUpperCase(c))
-                   System.out.printf("%c <--- letra maiuscula\n", c);
+                   System.out.printf("%c < letra maiuscula\n", c);
                 else if (Character.isSpaceChar(c))
-                        System.out.printf("%c <--- espaco blank\n", c);
+                        System.out.printf("%c < espaco blank\n", c);
                      else System.out.printf("%c\n", c);
     	}
   	}
